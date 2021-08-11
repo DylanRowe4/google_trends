@@ -2,10 +2,10 @@ import pandas as pd
 from pytrends.request import TrendReq
 import datetime
 
-#initiate instance for trends in the US
+#initiate instance for trends in England
 pytrend = TrendReq(hl='GB-ENG', tz=360)
 
-#use Chicago Fire FC as the google trends keywords
+#use Southampton FC as the google trends keywords
 kw_list = ['Southampton Football Club']
 
 #get dates for time range
