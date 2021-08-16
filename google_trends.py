@@ -1,6 +1,8 @@
 import pandas as pd                        
 from pytrends.request import TrendReq
 import datetime
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 #initiate instance for trends in England
 pytrend = TrendReq(hl='en-US', tz=360)
@@ -34,4 +36,13 @@ for key in categories:
     except:
         continue
 
-print(all_df)
+plt.figure(figsize=(12, 6))
+plt.plot(all_df.index, all_df['Sports News'], label='Sports News')
+#plt.plot(all_df.index, all_df['Sports'], label='Sports')
+#plt.plot(all_df.index, all_df['Team Sports'], label='Team Sports')
+plt.plot(all_df.index, all_df['Soccer'], label='Soccer')
+plt.xlabel('Date', size=12)
+plt.ylabel('Google Trend Indicator', size=12)
+plt.title('Manchester United FC Google Trends\n(America)', size=14)
+plt.legend()
+plt.show()
