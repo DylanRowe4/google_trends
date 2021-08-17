@@ -1,1 +1,1 @@
-# Script to pull googel trends from pytrends API for Manchester United Football Club. The google trends information is set to locate on the United States specifically for this call.
+Script to pull google trends from pytrends API for Manchester United Football Club. The google trends information is set to locate on the United States specifically for this call.
